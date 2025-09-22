@@ -1,0 +1,936 @@
+[{
+  "customer": {
+    "id": "DP775-90142",
+    "name": "Daniel Patel",
+    "ssn_last4": "6589",
+    "contact": {
+      "email": "dpatel@email.com",
+      "phone": "+1-555-687-4291",
+      "address": {
+        "street": "1825 Oakridge Lane",
+        "city": "Westville",
+        "state": "OH",
+        "zip": "43082",
+        "country": "USA"
+      }
+    },
+    "demographics": {
+      "dateOfBirth": "1978-09-22",
+      "occupation": "Business Owner - Patel Electronics Supply",
+      "incomeRange": "$300,000 - $500,000",
+      "riskTolerance": "Moderate-Aggressive",
+      "investmentGoals": ["Business Cash Management", "Retirement", "Education Fund"]
+    },
+    "accountOpenDate": "2019-10-03",
+    "relationshipManager": "Timothy Hoffman",
+    "kyc_last_review": "2024-11-10",
+    "creditScore": 792,
+    "clientTier": "Business Premier"
+  },
+  "accounts": [
+    {
+      "accountId": "775-90142-01",
+      "accountType": "Business Premier Checking",
+      "status": "Active",
+      "currency": "USD",
+      "openDate": "2019-10-03",
+      "currentBalance": 38456.23,
+      "availableBalance": 38456.23,
+      "overDraftLimit": 15000.00,
+      "avgBalance30Day": 42875.11,
+      "avgBalance90Day": 57362.45,
+      "monthlyServiceFee": 45.00,
+      "feeWaiverThreshold": 25000.00
+    },
+    {
+      "accountId": "775-90142-02",
+      "accountType": "Business Savings",
+      "status": "Active",
+      "currency": "USD",
+      "openDate": "2019-10-03",
+      "currentBalance": 125780.65,
+      "availableBalance": 125780.65,
+      "interestRate": 0.0125,
+      "lastInterestPaid": 130.61
+    },
+    {
+      "accountId": "775-90142-03",
+      "accountType": "Business Money Market",
+      "status": "Active",
+      "currency": "USD",
+      "openDate": "2020-05-17",
+      "currentBalance": 352489.78,
+      "availableBalance": 352489.78,
+      "interestRate": 0.0215,
+      "lastInterestPaid": 631.24
+    },
+    {
+      "accountId": "775-90142-04",
+      "accountType": "Business Line of Credit",
+      "status": "Active",
+      "currency": "USD",
+      "openDate": "2020-06-22",
+      "creditLimit": 250000.00,
+      "currentBalance": 45000.00,
+      "availableCredit": 205000.00,
+      "interestRate": 0.0675,
+      "paymentDueDate": "2025-03-15",
+      "minimumPayment": 1350.00
+    }
+  ],
+  "investments": {
+    "asOf": "2025-02-18",
+    "totalValue": 873542.67,
+    "assetAllocation": {
+      "equity": 58.5,
+      "fixedIncome": 30.0,
+      "cash": 9.5,
+      "alternatives": 2.0
+    },
+    "accounts": [
+      {
+        "accountId": "775-90142-05",
+        "accountType": "Business Investment Portfolio",
+        "status": "Active",
+        "currency": "USD",
+        "openDate": "2019-11-15",
+        "currentValue": 648729.42,
+        "cashBalance": 42650.28,
+        "annualizedReturn": {
+          "ytd": 7.8,
+          "1year": 12.4,
+          "3year": 9.2,
+          "5year": null,
+          "sinceInception": 10.7
+        }
+      },
+      {
+        "accountId": "775-90142-06",
+        "accountType": "SEP IRA",
+        "status": "Active",
+        "currency": "USD",
+        "openDate": "2020-01-10",
+        "currentValue": 224813.25,
+        "cashBalance": 10285.50,
+        "annualizedReturn": {
+          "ytd": 6.5,
+          "1year": 11.2,
+          "3year": 8.7,
+          "5year": null,
+          "sinceInception": 9.8
+        }
+      }
+    ],
+    "holdings": [
+      {
+        "symbol": "VTI",
+        "name": "Vanguard Total Stock Market ETF",
+        "category": "Equity",
+        "shares": 620.45,
+        "averageCost": 188.72,
+        "currentPrice": 273.85,
+        "marketValue": 169910.24,
+        "weight": 19.45
+      },
+      {
+        "symbol": "VXUS",
+        "name": "Vanguard Total International Stock ETF",
+        "category": "Equity",
+        "shares": 850.75,
+        "averageCost": 52.45,
+        "currentPrice": 61.78,
+        "marketValue": 52559.35,
+        "weight": 6.02
+      },
+      {
+        "symbol": "QQQ",
+        "name": "Invesco QQQ Trust",
+        "category": "Equity",
+        "shares": 175.00,
+        "averageCost": 312.68,
+        "currentPrice": 456.72,
+        "marketValue": 79926.00,
+        "weight": 9.15
+      },
+      {
+        "symbol": "AAPL",
+        "name": "Apple Inc.",
+        "category": "Equity",
+        "shares": 240.00,
+        "averageCost": 145.60,
+        "currentPrice": 215.45,
+        "marketValue": 51708.00,
+        "weight": 5.92
+      },
+      {
+        "symbol": "MSFT",
+        "name": "Microsoft Corporation",
+        "category": "Equity",
+        "shares": 115.00,
+        "averageCost": 295.32,
+        "currentPrice": 435.25,
+        "marketValue": 50053.75,
+        "weight": 5.73
+      },
+      {
+        "symbol": "TSLA",
+        "name": "Tesla Inc.",
+        "category": "Equity",
+        "shares": 90.00,
+        "averageCost": 212.45,
+        "currentPrice": 187.28,
+        "marketValue": 16855.20,
+        "weight": 1.93
+      },
+      {
+        "symbol": "AMZN",
+        "name": "Amazon.com Inc.",
+        "category": "Equity",
+        "shares": 120.00,
+        "averageCost": 152.38,
+        "currentPrice": 195.32,
+        "marketValue": 23438.40,
+        "weight": 2.68
+      },
+      {
+        "symbol": "BRK.B",
+        "name": "Berkshire Hathaway Inc. Class B",
+        "category": "Equity",
+        "shares": 105.00,
+        "averageCost": 287.65,
+        "currentPrice": 410.75,
+        "marketValue": 43128.75,
+        "weight": 4.94
+      },
+      {
+        "symbol": "BND",
+        "name": "Vanguard Total Bond Market ETF",
+        "category": "Fixed Income",
+        "shares": 875.00,
+        "averageCost": 79.85,
+        "currentPrice": 76.52,
+        "marketValue": 66955.00,
+        "weight": 7.67
+      },
+      {
+        "symbol": "VCIT",
+        "name": "Vanguard Intermediate-Term Corporate Bond ETF",
+        "category": "Fixed Income",
+        "shares": 740.00,
+        "averageCost": 89.72,
+        "currentPrice": 87.35,
+        "marketValue": 64639.00,
+        "weight": 7.40
+      },
+      {
+        "symbol": "VTIP",
+        "name": "Vanguard Short-Term Inflation-Protected Securities ETF",
+        "category": "Fixed Income",
+        "shares": 680.00,
+        "averageCost": 50.45,
+        "currentPrice": 49.85,
+        "marketValue": 33898.00,
+        "weight": 3.88
+      },
+      {
+        "symbol": "VGSH",
+        "name": "Vanguard Short-Term Treasury ETF",
+        "category": "Fixed Income",
+        "shares": 450.00,
+        "averageCost": 59.62,
+        "currentPrice": 59.28,
+        "marketValue": 26676.00,
+        "weight": 3.05
+      },
+      {
+        "symbol": "MINT",
+        "name": "PIMCO Enhanced Short Maturity Active ETF",
+        "category": "Fixed Income",
+        "shares": 680.00,
+        "averageCost": 100.87,
+        "currentPrice": 102.15,
+        "marketValue": 69462.00,
+        "weight": 7.95
+      },
+      {
+        "symbol": "VNQ",
+        "name": "Vanguard Real Estate ETF",
+        "category": "Alternatives",
+        "shares": 195.00,
+        "averageCost": 84.65,
+        "currentPrice": 90.35,
+        "marketValue": 17618.25,
+        "weight": 2.02
+      },
+      {
+        "symbol": "CASH",
+        "name": "Cash & Money Market",
+        "category": "Cash",
+        "shares": 1.00,
+        "averageCost": 82935.78,
+        "currentPrice": 82935.78,
+        "marketValue": 82935.78,
+        "weight": 9.49
+      }
+    ]
+  },
+  "transactions": [
+    {
+      "transactionId": "T289652347",
+      "accountId": "775-90142-01",
+      "transactionType": "Wire Transfer Outgoing",
+      "status": "Pending",
+      "date": "2025-02-18",
+      "amount": -28000.00,
+      "description": "Wire to Micron Components Supply Inc.",
+      "reference": "INV-29874",
+      "balance": 38456.23
+    },
+    {
+      "transactionId": "T289541236",
+      "accountId": "775-90142-01",
+      "transactionType": "Wire Transfer Outgoing",
+      "status": "Completed",
+      "date": "2025-02-17",
+      "amount": -45000.00,
+      "description": "Wire to DisplayTech International",
+      "reference": "PO-78542-B",
+      "balance": 66456.23,
+      "completionDate": "2025-02-17",
+      "reviewFlag": "Cleared"
+    },
+    {
+      "transactionId": "T289541235", 
+      "accountId": "775-90142-01",
+      "transactionType": "Wire Transfer Outgoing",
+      "status": "Completed",
+      "date": "2025-02-16",
+      "amount": -32000.00,
+      "description": "Wire to Global Circuit Solutions",
+      "reference": "GCS-INV-45621",
+      "balance": 111456.23,
+      "completionDate": "2025-02-16",
+      "reviewFlag": "Cleared"
+    },
+    {
+      "transactionId": "T289541234",
+      "accountId": "775-90142-01",
+      "transactionType": "Wire Transfer Incoming",
+      "status": "Completed",
+      "date": "2025-02-16",
+      "amount": 68000.00,
+      "description": "Wire from TechStore Distribution Inc.",
+      "reference": "Payment for INV-54218",
+      "balance": 143456.23,
+      "completionDate": "2025-02-16",
+      "reviewFlag": "Cleared"
+    },
+    {
+      "transactionId": "T289541230",
+      "accountId": "775-90142-01",
+      "transactionType": "Fee",
+      "status": "Completed",
+      "date": "2025-02-15",
+      "amount": -75.00,
+      "description": "Overdraft Fee",
+      "balance": 75456.23
+    },
+    {
+      "transactionId": "T289541229",
+      "accountId": "775-90142-01",
+      "transactionType": "Fee",
+      "status": "Completed",
+      "date": "2025-02-14",
+      "amount": -75.00,
+      "description": "Overdraft Fee",
+      "balance": 75531.23
+    },
+    {
+      "transactionId": "T289541228",
+      "accountId": "775-90142-01",
+      "transactionType": "Fee",
+      "status": "Completed",
+      "date": "2025-02-13",
+      "amount": -75.00,
+      "description": "Overdraft Fee",
+      "balance": 75606.23
+    },
+    {
+      "transactionId": "T289541227",
+      "accountId": "775-90142-01",
+      "transactionType": "Wire Transfer Outgoing",
+      "status": "Initiated",
+      "date": "2025-02-13",
+      "amount": -45000.00,
+      "description": "Wire to DisplayTech International",
+      "reference": "PO-78542-B",
+      "reviewFlag": "Compliance Review"
+    },
+    {
+      "transactionId": "T289541226",
+      "accountId": "775-90142-01",
+      "transactionType": "Wire Transfer Outgoing",
+      "status": "Initiated",
+      "date": "2025-02-13",
+      "amount": -32000.00,
+      "description": "Wire to Global Circuit Solutions",
+      "reference": "GCS-INV-45621",
+      "reviewFlag": "Compliance Review"
+    },
+    {
+      "transactionId": "T289541225",
+      "accountId": "775-90142-01",
+      "transactionType": "Wire Transfer Incoming",
+      "status": "Initiated",
+      "date": "2025-02-13",
+      "amount": 68000.00,
+      "description": "Wire from TechStore Distribution Inc.",
+      "reference": "Payment for INV-54218",
+      "reviewFlag": "Compliance Review"
+    },
+    {
+      "transactionId": "T289433215",
+      "accountId": "775-90142-01",
+      "transactionType": "ACH Payment",
+      "status": "Completed",
+      "date": "2025-02-10",
+      "amount": -8750.45,
+      "description": "Payment to JP Electronics Wholesale",
+      "reference": "INV-JP-45217",
+      "balance": 151606.23
+    },
+    {
+      "transactionId": "T289422176",
+      "accountId": "775-90142-01",
+      "transactionType": "ACH Deposit",
+      "status": "Completed",
+      "date": "2025-02-08",
+      "amount": 23548.72,
+      "description": "Deposit from OfficeWorks Corp",
+      "reference": "Payment for INV-54210",
+      "balance": 160356.68
+    },
+    {
+      "transactionId": "T289410125",
+      "accountId": "775-90142-03",
+      "transactionType": "Investment",
+      "status": "Completed",
+      "date": "2025-02-05",
+      "amount": 50000.00,
+      "description": "Purchase of MSFT (20 shares)",
+      "reference": "INV-MSFT-0205",
+      "balance": 352489.78
+    },
+    {
+      "transactionId": "T289410120",
+      "accountId": "775-90142-01",
+      "transactionType": "Transfer",
+      "status": "Completed",
+      "date": "2025-02-05",
+      "amount": -50000.00,
+      "description": "Transfer to Business Money Market",
+      "reference": "Investment Funding",
+      "balance": 136807.96
+    },
+    {
+      "transactionId": "T289310145",
+      "accountId": "775-90142-01",
+      "transactionType": "ACH Deposit",
+      "status": "Completed",
+      "date": "2025-02-01",
+      "amount": 42875.15,
+      "description": "Deposit from TechConnect Solutions",
+      "reference": "Payment for INV-54198",
+      "balance": 186807.96
+    },
+    {
+      "transactionId": "T289242176",
+      "accountId": "775-90142-01",
+      "transactionType": "Fee",
+      "status": "Completed",
+      "date": "2025-01-31",
+      "amount": -45.00,
+      "description": "Monthly Service Fee",
+      "reference": "January 2025",
+      "balance": 143932.81
+    },
+    {
+      "transactionId": "T289232156",
+      "accountId": "775-90142-04",
+      "transactionType": "Payment",
+      "status": "Completed",
+      "date": "2025-01-15",
+      "amount": -5000.00,
+      "description": "Payment to Business Line of Credit",
+      "reference": "January Payment",
+      "balance": 45000.00
+    },
+    {
+      "transactionId": "T289232155",
+      "accountId": "775-90142-01",
+      "transactionType": "Transfer",
+      "status": "Completed",
+      "date": "2025-01-15",
+      "amount": -5000.00,
+      "description": "Transfer to Business Line of Credit",
+      "reference": "January Payment",
+      "balance": 143977.81
+    },
+    {
+      "transactionId": "T287542128",
+      "accountId": "775-90142-01",
+      "transactionType": "ACH Payment",
+      "status": "Completed",
+      "date": "2025-01-12",
+      "amount": -125000.00,
+      "description": "Payment to WestBuild Contractors",
+      "reference": "Store Renovation Project",
+      "balance": 148977.81
+    }
+  ],
+  "investmentTransactions": [
+    {
+      "transactionId": "IT28935428",
+      "accountId": "775-90142-05",
+      "date": "2025-02-05",
+      "type": "Buy",
+      "symbol": "MSFT",
+      "shares": 20.0,
+      "pricePerShare": 428.75,
+      "amount": 8575.00,
+      "fees": 8.99,
+      "total": 8583.99
+    },
+    {
+      "transactionId": "IT28922147",
+      "accountId": "775-90142-05",
+      "date": "2025-01-25",
+      "type": "Dividend",
+      "symbol": "VTI",
+      "shares": null,
+      "pricePerShare": null,
+      "amount": 745.52,
+      "fees": 0.00,
+      "total": 745.52
+    },
+    {
+      "transactionId": "IT28915428",
+      "accountId": "775-90142-06",
+      "date": "2025-01-15",
+      "type": "Contribution",
+      "symbol": null,
+      "shares": null,
+      "pricePerShare": null,
+      "amount": 15000.00,
+      "fees": 0.00,
+      "total": 15000.00
+    },
+    {
+      "transactionId": "IT28825476",
+      "accountId": "775-90142-05",
+      "date": "2025-01-10",
+      "type": "Buy",
+      "symbol": "QQQ",
+      "shares": 25.0,
+      "pricePerShare": 432.68,
+      "amount": 10817.00,
+      "fees": 8.99,
+      "total": 10825.99
+    }
+  ],
+  "accountAlerts": [
+    {
+      "alertId": "ALT-47856",
+      "accountId": "775-90142-01",
+      "date": "2025-02-13",
+      "type": "Compliance",
+      "description": "Multiple high-value wire transfers initiated on same day",
+      "status": "Cleared",
+      "clearanceDate": "2025-02-16",
+      "reviewedBy": "Compliance Team"
+    },
+    {
+      "alertId": "ALT-47855",
+      "accountId": "775-90142-01",
+      "date": "2025-02-13",
+      "type": "Overdraft",
+      "description": "Pending transactions would result in overdraft if processed",
+      "status": "Activated",
+      "clearanceDate": null,
+      "reviewedBy": null
+    },
+    {
+      "alertId": "ALT-45782",
+      "accountId": "775-90142-01",
+      "date": "2025-01-25",
+      "type": "Balance",
+      "description": "Account balance dropped below service fee waiver threshold",
+      "status": "Cleared",
+      "clearanceDate": "2025-02-10",
+      "reviewedBy": "System"
+    }
+  ],
+  "accountFees": {
+    "monthlyServiceFee": 45.00,
+    "waiverThreshold": 25000.00,
+    "overdraftFee": 75.00,
+    "wireFeeOutgoing": 35.00,
+    "wireFeeIncoming": 15.00,
+    "stopPaymentFee": 35.00
+  },
+  "recentAdjustments": [
+    {
+      "adjustmentId": "ADJ-78542",
+      "accountId": "775-90142-01",
+      "date": "2025-02-19",
+      "type": "Fee Refund",
+      "description": "Refund of overdraft fees due to transaction delays",
+      "amount": 225.00,
+      "status": "Approved",
+      "approvedBy": "Margaret Wilson - Customer Relations",
+      "notes": "Refund of three $75 overdraft fees incurred during wire transfer delay period"
+    },
+    {
+      "adjustmentId": "ADJ-78543",
+      "accountId": "775-90142-01",
+      "date": "2025-02-19",
+      "type": "Fee Waiver",
+      "description": "Waiver of January monthly service fee",
+      "amount": 45.00,
+      "status": "Completed",
+      "approvedBy": "Rachel Thompson - Customer Service",
+      "notes": "Service fee waived due to balance issues related to delayed wire transfers"
+    }
+  ],
+  "clientNotes": [
+    {
+      "noteId": "N-452187",
+      "date": "2025-02-19",
+      "author": "Rachel Thompson",
+      "department": "Customer Service",
+      "subject": "Fee waiver and transaction follow-up",
+      "note": "Client called about recent wire transfer ($28k). Previous transfer issues have been resolved. Waived $45 monthly service fee and confirmed $225 overdraft fee refund in process. Client has decided not to close account at this time.",
+      "priority": "Medium"
+    },
+    {
+      "noteId": "N-452145",
+      "date": "2025-02-16",
+      "author": "Rachel Thompson",
+      "department": "Customer Service",
+      "subject": "Wire transfer delays and escalation",
+      "note": "Client very upset about delayed wire transfers initiated on 2/13 - two outgoing ($45k, $32k) and one incoming ($68k). Transfers flagged for compliance review without client notification. Escalated to priority review team and sent account closure forms as requested. Client experiencing overdraft fees and business impacts.",
+      "priority": "High"
+    },
+    {
+      "noteId": "N-448732",
+      "date": "2025-01-15",
+      "author": "Timothy Hoffman",
+      "department": "Relationship Management",
+      "subject": "Quarterly business review meeting",
+      "note": "Met with client at his business location. Company expecting 15-20% revenue growth in 2025. Planning to open second retail location in September. Discussed business expansion loan options and increased line of credit.",
+      "priority": "Normal"
+    },
+    {
+      "noteId": "N-432156",
+      "date": "2024-10-05",
+      "author": "Timothy Hoffman",
+      "department": "Relationship Management",
+      "subject": "Annual account review",
+      "note": "Completed annual review of business accounts and investments. Client satisfied with performance. Implemented rebalancing of investment portfolio to slightly increase equity exposure based on client's comfort with current market conditions.",
+      "priority": "Normal"
+    }
+  ],
+  "customerRiskProfile": {
+    "riskScore": "Low",
+    "lastReviewDate": "2024-11-10",
+    "reviewedBy": "Compliance Department",
+    "historicalSARs": 0,
+    "kycStatus": "Current",
+    "watchlistStatus": "Clear",
+    "highRiskFactors": [],
+    "notes": "Established business client with consistent banking patterns"
+  }
+},
+{
+  "merchant": {
+    "id": "MRCH-AS-8834",
+    "name": "Arvind Sinha",
+    "businessName": "Sinha Electronics & Appliances",
+    "merchantCode": "MTR99012",
+    "contact": {
+      "phone": "+91-98765-43210",
+      "email": "arvind.sinha@gmail.com",
+      "address": {
+        "street": "Shop No. 45, Electronics Market",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400001",
+        "country": "India"
+      }
+    },
+    "accountStatus": "Active - Under Review",
+    "paymentGateway": "IndianPayments Gateway",
+    "accountOpenDate": "2023-03-15",
+    "lastActiveDate": "2025-07-10",
+    "riskCategory": "Medium",
+    "monthlyVolume": 2500000.00,
+    "currency": "INR"
+  },
+  "transactions": [
+    {
+      "transactionId": "TXN-MTR-99012-001",
+      "orderId": "MTR-99012",
+      "merchantId": "MRCH-AS-8834",
+      "date": "2025-07-09",
+      "time": "10:17:00",
+      "amount": 72000.00,
+      "currency": "INR",
+      "paymentMethod": "UPI",
+      "status": "Customer Debited - Settlement Pending",
+      "customerUPI": "customer@paytm",
+      "merchantUPI": "sinha.electronics@axis",
+      "paymentReference": "UPI-250709-1017-789654",
+      "settlementStatus": "Failed",
+      "settlementDate": null,
+      "disputeFlag": false,
+      "notes": "Customer payment successful but not reflecting in merchant settlement report"
+    },
+    {
+      "transactionId": "TXN-CB-18507-001",
+      "orderId": "ORD-18507",
+      "merchantId": "MRCH-AS-8834",
+      "date": "2025-06-25",
+      "time": "14:30:00",
+      "amount": 18500.00,
+      "currency": "INR",
+      "paymentMethod": "Credit Card",
+      "status": "Chargeback Initiated",
+      "chargebackReason": "Authorization Dispute",
+      "chargebackDate": "2025-07-02",
+      "chargebackId": "CB18507",
+      "disputeFlag": true,
+      "settlementStatus": "Held",
+      "notes": "Customer disputed transaction - chargeback initiated by issuing bank"
+    },
+    {
+      "transactionId": "TXN-PAYMENT-CB18507",
+      "orderId": "CHARGEBACK-PAYMENT-18507",
+      "merchantId": "MRCH-AS-8834",
+      "date": "2025-07-03",
+      "time": "09:45:00",
+      "amount": 18500.00,
+      "currency": "INR",
+      "paymentMethod": "NEFT",
+      "status": "Paid - Reconciliation Pending",
+      "paymentReference": "AXIS98382122",
+      "utr": "AXIS98382122",
+      "fromAccount": "Axis Bank - 912345678901",
+      "toAccount": "IndianPayments Gateway Reserve",
+      "settlementStatus": "Mismatched Reference",
+      "disputeFlag": false,
+      "notes": "Chargeback payment made by merchant but incorrectly tagged to different dispute ID"
+    },
+    {
+      "transactionId": "TXN-MTR-88901-001",
+      "orderId": "MTR-88901",
+      "merchantId": "MRCH-AS-8834",
+      "date": "2025-07-08",
+      "time": "16:22:00",
+      "amount": 45000.00,
+      "currency": "INR",
+      "paymentMethod": "UPI",
+      "status": "Completed",
+      "customerUPI": "buyer@phonepe",
+      "merchantUPI": "sinha.electronics@axis",
+      "paymentReference": "UPI-250708-1622-445566",
+      "settlementStatus": "Settled",
+      "settlementDate": "2025-07-09",
+      "disputeFlag": false,
+      "notes": "Regular transaction - settled successfully"
+    },
+    {
+      "transactionId": "TXN-MTR-88902-001",
+      "orderId": "MTR-88902",
+      "merchantId": "MRCH-AS-8834",
+      "date": "2025-07-07",
+      "time": "11:15:00",
+      "amount": 28750.00,
+      "currency": "INR",
+      "paymentMethod": "Debit Card",
+      "status": "Completed",
+      "cardNetwork": "Visa",
+      "cardLast4": "4567",
+      "authCode": "789012",
+      "paymentReference": "CARD-250707-1115-334455",
+      "settlementStatus": "Settled",
+      "settlementDate": "2025-07-08",
+      "disputeFlag": false,
+      "notes": "Regular transaction - settled successfully"
+    },
+    {
+      "transactionId": "TXN-MTR-88903-001",
+      "orderId": "MTR-88903",
+      "merchantId": "MRCH-AS-8834",
+      "date": "2025-07-06",
+      "time": "13:45:00",
+      "amount": 15200.00,
+      "currency": "INR",
+      "paymentMethod": "Net Banking",
+      "status": "Completed",
+      "bank": "HDFC Bank",
+      "paymentReference": "NBK-250706-1345-112233",
+      "settlementStatus": "Settled",
+      "settlementDate": "2025-07-07",
+      "disputeFlag": false,
+      "notes": "Regular transaction - settled successfully"
+    }
+  ],
+  "chargebacks": [
+    {
+      "chargebackId": "CB18507",
+      "originalTransactionId": "TXN-CB-18507-001",
+      "merchantId": "MRCH-AS-8834",
+      "amount": 18500.00,
+      "currency": "INR",
+      "initiatedDate": "2025-07-02",
+      "reason": "Authorization Dispute",
+      "reasonCode": "4837",
+      "status": "Pending Payment",
+      "paymentDueDate": "2025-07-12",
+      "paymentStatus": "Paid - Reconciliation Error",
+      "paymentReference": "AXIS98382122",
+      "paymentDate": "2025-07-03",
+      "disputeResolutionStatus": "Under Review",
+      "notes": "Merchant payment received but incorrectly mapped to different chargeback ID"
+    }
+  ],
+  "supportTickets": [
+    {
+      "ticketId": "SR45298",
+      "merchantId": "MRCH-AS-8834",
+      "dateCreated": "2025-07-03",
+      "dateModified": "2025-07-06",
+      "subject": "Chargeback Payment Not Reconciled",
+      "description": "Merchant paid chargeback CB18507 via NEFT with UTR AXIS98382122 but payment not reflecting as settled",
+      "priority": "Urgent",
+      "status": "Escalated - Lost in Queue",
+      "assignedTo": "Prakash Kumar",
+      "department": "Risk & Reconciliation",
+      "notes": "Ticket appears to have been lost in system routing"
+    },
+    {
+      "ticketId": "SR46003",
+      "merchantId": "MRCH-AS-8834",
+      "dateCreated": "2025-07-06",
+      "dateModified": "2025-07-08",
+      "subject": "Duplicate - Chargeback Payment Issue",
+      "description": "Re-raised ticket for chargeback CB18507 payment reconciliation issue",
+      "priority": "High",
+      "status": "In Progress",
+      "assignedTo": "Settlement Operations Team",
+      "department": "Risk & Reconciliation",
+      "notes": "Duplicate ticket created due to lack of visibility on original ticket"
+    },
+    {
+      "ticketId": "SR47300",
+      "merchantId": "MRCH-AS-8834",
+      "dateCreated": "2025-07-10",
+      "dateModified": "2025-07-10",
+      "subject": "Missing Settlement - Customer Payment Debited",
+      "description": "Customer payment of ₹72,000 for Order MTR-99012 successful but not in settlement report",
+      "priority": "Critical",
+      "status": "Open",
+      "assignedTo": "Settlement Team",
+      "department": "Operations",
+      "notes": "Customer debited but merchant not credited - urgent reconciliation required"
+    }
+  ],
+  "alerts": [
+    {
+      "alertId": "ALT-SUSP-8834-001",
+      "merchantId": "MRCH-AS-8834",
+      "date": "2025-07-08",
+      "type": "Account Suspension Warning",
+      "description": "Merchant account scheduled for suspension due to unpaid chargeback",
+      "status": "Temporarily Frozen",
+      "triggerReason": "Unpaid Chargeback CB18507",
+      "actionRequired": "Manual Review Override",
+      "escalatedTo": "Risk Head",
+      "notes": "Auto-suspension triggered despite merchant payment due to reconciliation error"
+    },
+    {
+      "alertId": "ALT-SUSP-8834-002",
+      "merchantId": "MRCH-AS-8834",
+      "date": "2025-07-09",
+      "type": "Final Suspension Notice",
+      "description": "24-hour notice for account suspension",
+      "status": "Override Applied",
+      "triggerReason": "Unresolved Chargeback CB18507",
+      "actionRequired": "Senior Level Review",
+      "escalatedTo": "Risk Head",
+      "notes": "Final warning issued before manual override applied"
+    }
+  ],
+  "settlements": [
+    {
+      "settlementId": "SETTLE-250709-001",
+      "merchantId": "MRCH-AS-8834",
+      "date": "2025-07-09",
+      "amount": 73750.00,
+      "currency": "INR",
+      "transactionCount": 2,
+      "includedTransactions": ["TXN-MTR-88901-001", "TXN-MTR-88902-001"],
+      "excludedTransactions": ["TXN-MTR-99012-001"],
+      "status": "Completed",
+      "settlementAccount": "Axis Bank - 912345678901",
+      "notes": "Regular settlement - excluded Order MTR-99012 due to reconciliation issue"
+    },
+    {
+      "settlementId": "SETTLE-250708-001",
+      "merchantId": "MRCH-AS-8834",
+      "date": "2025-07-08",
+      "amount": 15200.00,
+      "currency": "INR",
+      "transactionCount": 1,
+      "includedTransactions": ["TXN-MTR-88903-001"],
+      "status": "Completed",
+      "settlementAccount": "Axis Bank - 912345678901",
+      "notes": "Regular settlement"
+    }
+  ],
+  "reconciliationIssues": [
+    {
+      "issueId": "REC-CB18507-001",
+      "type": "Chargeback Payment Mismapping",
+      "description": "Merchant payment for CB18507 tagged to incorrect dispute ID",
+      "affectedTransactions": ["TXN-PAYMENT-CB18507"],
+      "dateIdentified": "2025-07-08",
+      "status": "Under Resolution",
+      "resolutionETA": "2025-07-11",
+      "notes": "Settlement Operations team working on re-mapping payment reference"
+    },
+    {
+      "issueId": "REC-MTR99012-001",
+      "type": "UPI Settlement Failure",
+      "description": "Customer payment successful but not included in merchant settlement",
+      "affectedTransactions": ["TXN-MTR-99012-001"],
+      "dateIdentified": "2025-07-10",
+      "status": "Under Investigation",
+      "resolutionETA": "2025-07-12",
+      "notes": "UPI transaction mapping issue - customer debited but merchant not credited"
+    }
+  ],
+  "merchantAccount": {
+    "accountBalance": 145750.00,
+    "pendingSettlements": 72000.00,
+    "heldFunds": 18500.00,
+    "availableBalance": 55250.00,
+    "lastSettlementDate": "2025-07-09",
+    "nextSettlementDate": "2025-07-11",
+    "settlementFrequency": "T+1",
+    "accountStatus": "Active - Under Review",
+    "suspensionRisk": "High",
+    "complianceStatus": "Review Required"
+  }
+}
+]

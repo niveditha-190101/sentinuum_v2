@@ -1,0 +1,940 @@
+[
+  {
+    "conversation_metadata": {
+      "conversation_id": "3152009",
+      "customer_id": "C346",
+      "timestamp": "2023-02-15T14:30:00Z",
+      "call_type": "inbound",
+      "participants": {
+        "customer": {
+          "customer_name": "David Yang",
+          "account_type": "Investment accounts"
+        },
+        "agent": {
+          "agent_name": "Sarah"
+        }
+      }
+    },
+    "conversation_details": {
+      "summary": {
+        "overview": "Customer reported unauthorized trades, issue successfully resolved within 24 hours.",
+        "primary_issue": "unauthorized trades",
+        "resolution_status": "resolved",
+        "call_outcome": "issue_resolved"
+      },
+      "transcript_segments": [
+        {
+          "utterance_id": "1",
+          "timestamp": "2023-02-15T14:30:00Z",
+          "speaker": "agent",
+          "text": "Thank you for calling Summit Investment Partners. This is Sarah speaking. How may I assist you today?",
+          "sentiment": "neutral",
+          "key_phrases": []
+        },
+        {
+          "utterance_id": "2",
+          "timestamp": "2023-02-15T14:30:05Z",
+          "speaker": "customer",
+          "text": "Hi Sarah, this is Robert Chen. I noticed some trades in my account that I don't remember making. Could you help me look into this?",
+          "sentiment": "neutral",
+          "key_phrases": ["unauthorized trades"]
+        },
+        {
+          "utterance_id": "3",
+          "timestamp": "2023-02-15T14:30:15Z",
+          "speaker": "agent",
+          "text": "Absolutely, Mr. Chen. I'll be happy to help you with that. Let me verify your account details first.",
+          "sentiment": "positive",
+          "key_phrases": []
+        },
+        {
+          "utterance_id": "4",
+          "timestamp": "2023-02-15T14:32:30Z",
+          "speaker": "customer",
+          "text": "Great! I can see you've reversed the trades already. That was incredibly fast - thank you so much!",
+          "sentiment": "positive",
+          "key_phrases": ["reversed trades", "fast service"]
+        },
+        {
+          "utterance_id": "5",
+          "timestamp": "2023-02-15T14:32:45Z",
+          "speaker": "agent",
+          "text": "You're very welcome! We detected the unauthorized activity through our monitoring system and took immediate action. Your account is now secure.",
+          "sentiment": "positive",
+          "key_phrases": ["monitoring system", "immediate action"]
+        },
+        {
+          "utterance_id": "6",
+          "timestamp": "2023-02-15T14:33:00Z",
+          "speaker": "customer",
+          "text": "This is exactly why I love banking with you folks. Excellent service as always!",
+          "sentiment": "positive",
+          "key_phrases": ["excellent service"]
+        }
+      ]
+    },
+    "key_points": {
+      "customer_concerns": [
+        {
+          "type": "fraud",
+          "description": "Unauthorized trades in account",
+          "transaction_reference": {
+            "amount": 25000,
+            "date": "2023-02-14",
+            "account_last4": "7829"
+          }
+        }
+      ]
+    },
+    "action_items": [
+      {
+        "type": "internal_escalation",
+        "action_type": "issue_resolution",
+        "assigned_to": "fraud department",
+        "due_date": "2023-02-15T16:00:00Z",
+        "status": "completed"
+      }
+    ],
+    "analytics": {
+      "overall_sentiment": "positive"
+    }
+  },
+  {
+    "conversation_metadata": {
+      "conversation_id": "3152010",
+      "customer_id": "C347",
+      "timestamp": "2023-03-08T11:15:00Z",
+      "call_type": "inbound",
+      "participants": {
+        "customer": {
+          "customer_name": "Shannon Kaufman",
+          "account_type": "Retirement accounts"
+        },
+        "agent": {
+          "agent_name": "James"
+        }
+      }
+    },
+    "conversation_details": {
+      "summary": {
+        "overview": "Customer inquired about unauthorized trades, resolved with full reimbursement and enhanced security.",
+        "primary_issue": "unauthorized trades",
+        "resolution_status": "resolved",
+        "call_outcome": "customer_satisfied"
+      },
+      "transcript_segments": [
+        {
+          "utterance_id": "1",
+          "timestamp": "2023-03-08T11:15:00Z",
+          "speaker": "customer",
+          "text": "Hello, I'm calling about some trades that appeared in my account that I didn't authorize.",
+          "sentiment": "neutral",
+          "key_phrases": ["unauthorized trades"]
+        },
+        {
+          "utterance_id": "2",
+          "timestamp": "2023-03-08T11:15:30Z",
+          "speaker": "agent",
+          "text": "I see you're calling about the incident from last week. I have great news - we've fully resolved the issue and restored your account to its original state.",
+          "sentiment": "positive",
+          "key_phrases": ["fully resolved", "restored account"]
+        },
+        {
+          "utterance_id": "3",
+          "timestamp": "2023-03-08T11:16:00Z",
+          "speaker": "customer",
+          "text": "Oh wonderful! I was worried about my retirement savings. Thank you for taking care of this so quickly.",
+          "sentiment": "positive",
+          "key_phrases": ["wonderful", "quick resolution"]
+        },
+        {
+          "utterance_id": "4",
+          "timestamp": "2023-03-08T11:16:30Z",
+          "speaker": "agent",
+          "text": "We've also implemented additional security measures on your account and provided you with a $500 credit for the inconvenience.",
+          "sentiment": "positive",
+          "key_phrases": ["additional security", "credit for inconvenience"]
+        },
+        {
+          "utterance_id": "5",
+          "timestamp": "2023-03-08T11:17:00Z",
+          "speaker": "customer",
+          "text": "That's incredibly generous! I'm impressed with how you've handled this entire situation. Thank you so much!",
+          "sentiment": "positive",
+          "key_phrases": ["incredibly generous", "impressed"]
+        }
+      ]
+    },
+    "key_points": {
+      "customer_concerns": [
+        {
+          "type": "fraud",
+          "description": "Unauthorized trades in account",
+          "transaction_reference": {
+            "amount": 45000,
+            "date": "2023-03-01",
+            "account_last4": "9156"
+          }
+        }
+      ]
+    },
+    "action_items": [
+      {
+        "type": "internal_escalation",
+        "action_type": "issue_resolution",
+        "assigned_to": "fraud department",
+        "due_date": "2023-03-08T12:00:00Z",
+        "status": "completed"
+      }
+    ],
+    "analytics": {
+      "overall_sentiment": "positive"
+    }
+  },
+  {
+    "conversation_metadata": {
+      "conversation_id": "3152011",
+      "customer_id": "C348",
+      "timestamp": "2023-04-12T16:45:00Z",
+      "call_type": "inbound",
+      "participants": {
+        "customer": {
+          "customer_name": "Jennifer Hernandez",
+          "account_type": "Trading accounts"
+        },
+        "agent": {
+          "agent_name": "Lisa"
+        }
+      }
+    },
+    "conversation_details": {
+      "summary": {
+        "overview": "Customer reported unauthorized trades, promptly resolved with account protection upgrade.",
+        "primary_issue": "unauthorized trades",
+        "resolution_status": "resolved",
+        "call_outcome": "upgraded_security"
+      },
+      "transcript_segments": [
+        {
+          "utterance_id": "1",
+          "timestamp": "2023-04-12T16:45:00Z",
+          "speaker": "customer",
+          "text": "Hi, I'm calling about some suspicious trading activity on my account.",
+          "sentiment": "neutral",
+          "key_phrases": ["suspicious trading activity"]
+        },
+        {
+          "utterance_id": "2",
+          "timestamp": "2023-04-12T16:45:15Z",
+          "speaker": "agent",
+          "text": "I can see that our system already flagged and reversed those transactions. Everything has been restored to your account.",
+          "sentiment": "positive",
+          "key_phrases": ["flagged and reversed", "restored"]
+        },
+        {
+          "utterance_id": "3",
+          "timestamp": "2023-04-12T16:45:45Z",
+          "speaker": "customer",
+          "text": "Wow, that's amazing! I didn't even have to explain what happened. Your systems caught it automatically?",
+          "sentiment": "positive",
+          "key_phrases": ["amazing", "caught automatically"]
+        },
+        {
+          "utterance_id": "4",
+          "timestamp": "2023-04-12T16:46:00Z",
+          "speaker": "agent",
+          "text": "Yes, our AI monitoring detected the unusual pattern and immediately secured your account. We've also upgraded you to our premium security package at no charge.",
+          "sentiment": "positive",
+          "key_phrases": ["AI monitoring", "premium security package"]
+        },
+        {
+          "utterance_id": "5",
+          "timestamp": "2023-04-12T16:46:30Z",
+          "speaker": "customer",
+          "text": "This is incredible service! I'm so glad I chose Summit Investment Partners. You've exceeded all my expectations!",
+          "sentiment": "positive",
+          "key_phrases": ["incredible service", "exceeded expectations"]
+        }
+      ]
+    },
+    "key_points": {
+      "customer_concerns": [
+        {
+          "type": "fraud",
+          "description": "Unauthorized trades in account",
+          "transaction_reference": {
+            "amount": 75000,
+            "date": "2023-04-11",
+            "account_last4": "3427"
+          }
+        }
+      ]
+    },
+    "action_items": [
+      {
+        "type": "internal_escalation",
+        "action_type": "issue_resolution",
+        "assigned_to": "fraud department",
+        "due_date": "2023-04-12T18:00:00Z",
+        "status": "completed"
+      }
+    ],
+    "analytics": {
+      "overall_sentiment": "positive"
+    }
+  },
+  {
+    "conversation_metadata": {
+      "conversation_id": "3152012",
+      "customer_id": "C349",
+      "timestamp": "2023-05-20T13:20:00Z",
+      "call_type": "inbound",
+      "participants": {
+        "customer": {
+          "customer_name": "Katherine Arnold Walsh",
+          "account_type": "Savings accounts"
+        },
+        "agent": {
+          "agent_name": "Michael"
+        }
+      }
+    },
+    "conversation_details": {
+      "summary": {
+        "overview": "Customer contacted about unauthorized trades, issue resolved with compensation and account enhancement.",
+        "primary_issue": "unauthorized trades",
+        "resolution_status": "resolved",
+        "call_outcome": "customer_retention_success"
+      },
+      "transcript_segments": [
+        {
+          "utterance_id": "1",
+          "timestamp": "2023-05-20T13:20:00Z",
+          "speaker": "customer",
+          "text": "Hi, I noticed some unauthorized transactions in my investment account and wanted to report them.",
+          "sentiment": "neutral",
+          "key_phrases": ["unauthorized transactions"]
+        },
+        {
+          "utterance_id": "2",
+          "timestamp": "2023-05-20T13:20:30Z",
+          "speaker": "agent",
+          "text": "Good news, Ms. Walsh! We've already processed the reversal of those trades and added interest compensation to your account.",
+          "sentiment": "positive",
+          "key_phrases": ["processed reversal", "interest compensation"]
+        },
+        {
+          "utterance_id": "3",
+          "timestamp": "2023-05-20T13:21:00Z",
+          "speaker": "customer",
+          "text": "That's fantastic! I was expecting this to be a long, difficult process. You've made it so easy!",
+          "sentiment": "positive",
+          "key_phrases": ["fantastic", "made it easy"]
+        },
+        {
+          "utterance_id": "4",
+          "timestamp": "2023-05-20T13:21:30Z",
+          "speaker": "agent",
+          "text": "We've also enrolled you in our VIP customer program with enhanced fraud protection and priority support.",
+          "sentiment": "positive",
+          "key_phrases": ["VIP customer program", "enhanced fraud protection"]
+        },
+        {
+          "utterance_id": "5",
+          "timestamp": "2023-05-20T13:22:00Z",
+          "speaker": "customer",
+          "text": "I'm so impressed with your proactive approach! This is why I recommend Summit to all my friends and family.",
+          "sentiment": "positive",
+          "key_phrases": ["impressed", "proactive approach", "recommend"]
+        }
+      ]
+    },
+    "key_points": {
+      "customer_concerns": [
+        {
+          "type": "fraud",
+          "description": "Unauthorized trades in account",
+          "transaction_reference": {
+            "amount": 32000,
+            "date": "2023-05-19",
+            "account_last4": "8563"
+          }
+        }
+      ]
+    },
+    "action_items": [
+      {
+        "type": "internal_escalation",
+        "action_type": "issue_resolution",
+        "assigned_to": "fraud department",
+        "due_date": "2023-05-20T15:00:00Z",
+        "status": "completed"
+      }
+    ],
+    "analytics": {
+      "overall_sentiment": "positive"
+    }
+  },
+  {
+    "conversation_metadata": {
+      "conversation_id": "3152013",
+      "customer_id": "C350",
+      "timestamp": "2023-06-14T09:10:00Z",
+      "call_type": "inbound",
+      "participants": {
+        "customer": {
+          "customer_name": "Dana Brooks",
+          "account_type": "Business accounts"
+        },
+        "agent": {
+          "agent_name": "Rachel"
+        }
+      }
+    },
+    "conversation_details": {
+      "summary": {
+        "overview": "Customer reported unauthorized trades, resolved with full restoration and business account upgrade.",
+        "primary_issue": "unauthorized trades",
+        "resolution_status": "resolved",
+        "call_outcome": "account_upgraded"
+      },
+      "transcript_segments": [
+        {
+          "utterance_id": "1",
+          "timestamp": "2023-06-14T09:10:00Z",
+          "speaker": "customer",
+          "text": "Good morning, I'm calling about some trades that were made without my authorization on my business account.",
+          "sentiment": "neutral",
+          "key_phrases": ["unauthorized trades", "business account"]
+        },
+        {
+          "utterance_id": "2",
+          "timestamp": "2023-06-14T09:10:30Z",
+          "speaker": "agent",
+          "text": "Good morning, Ms. Brooks! I'm pleased to inform you that we've completely resolved the unauthorized trading issue and restored your account with additional interest earned.",
+          "sentiment": "positive",
+          "key_phrases": ["completely resolved", "additional interest earned"]
+        },
+        {
+          "utterance_id": "3",
+          "timestamp": "2023-06-14T09:11:00Z",
+          "speaker": "customer",
+          "text": "That's wonderful news! I was concerned about the impact on my business operations, but you've handled this perfectly.",
+          "sentiment": "positive",
+          "key_phrases": ["wonderful news", "handled perfectly"]
+        },
+        {
+          "utterance_id": "4",
+          "timestamp": "2023-06-14T09:11:30Z",
+          "speaker": "agent",
+          "text": "We've also upgraded your business account to our platinum tier with enhanced security features and dedicated support, complimentary for the first year.",
+          "sentiment": "positive",
+          "key_phrases": ["upgraded", "platinum tier", "complimentary"]
+        },
+        {
+          "utterance_id": "5",
+          "timestamp": "2023-06-14T09:12:00Z",
+          "speaker": "customer",
+          "text": "This is outstanding customer service! You've turned a potential problem into an opportunity to improve my banking experience. Thank you!",
+          "sentiment": "positive",
+          "key_phrases": ["outstanding customer service", "improve banking experience"]
+        }
+      ]
+    },
+    "key_points": {
+      "customer_concerns": [
+        {
+          "type": "fraud",
+          "description": "Unauthorized trades in account",
+          "transaction_reference": {
+            "amount": 120000,
+            "date": "2023-06-13",
+            "account_last4": "2748"
+          }
+        }
+      ]
+    },
+    "action_items": [
+      {
+        "type": "internal_escalation",
+        "action_type": "issue_resolution",
+        "assigned_to": "fraud department",
+        "due_date": "2023-06-14T11:00:00Z",
+        "status": "completed"
+      }
+    ],
+    "analytics": {
+      "overall_sentiment": "positive"
+    }
+  },
+  {
+            "conversation_metadata": {
+                "call_type": "inbound",
+                "customer_name": "Sinha",
+                "account_type": "Checking accounts",
+                "agent_name": "Agent",
+                "account_number": null
+            },
+            "conversation_details": {
+                "summary": {
+                    "overview": "Customer received a chargeback notification for ₹18,500 despite having paid it on July 3rd via NEFT. The payment is not reconciled yet.",
+                    "primary_issue": "chargeback",
+                    "resolution_status": "pending",
+                    "call_outcome": "callback_scheduled"
+                },
+                "transcript_segments": [
+                    {
+                        "speaker": "customer",
+                        "text": "Hi, I received a chargeback notification today for ₹18,500 that says it's unpaid. But I paid it on July 3rd morning through NEFT. I even have the UTR: AXIS98382122.",
+                        "sentiment": "negative",
+                        "key_phrases": [
+                            "chargeback notification",
+                            "₹18,500",
+                            "paid on July 3rd",
+                            "UTR: AXIS98382122"
+                        ]
+                    },
+                    {
+                        "speaker": "agent",
+                        "text": "Thank you, Mr. Sinha. Let me pull up your account and verify... Yes, I see the chargeback listed under dispute ID CB18507, but it’s still showing as “pending”. If you’ve made the payment, it may not have been reconciled yet in the backend.",
+                        "sentiment": "neutral",
+                        "key_phrases": [
+                            "chargeback",
+                            "dispute ID CB18507",
+                            "pending",
+                            "reconciled"
+                        ]
+                    },
+                    {
+                        "speaker": "customer",
+                        "text": "That makes no sense. It's been nearly 24 hours. The payment is settled from my bank.",
+                        "sentiment": "negative",
+                        "key_phrases": [
+                            "nearly 24 hours",
+                            "payment settled"
+                        ]
+                    },
+                    {
+                        "speaker": "agent",
+                        "text": "Understood. I’ll raise a service ticket now and attach the UTR to the dispute. You’ll get a response within 2-3 working days. I’ve also marked this as \"Urgent\".",
+                        "sentiment": "neutral",
+                        "key_phrases": [
+                            "service ticket",
+                            "attach UTR",
+                            "response within 2-3 working days",
+                            "urgent"
+                        ]
+                    },
+                    {
+                        "speaker": "customer",
+                        "text": "You better fix this. I got an SMS saying my merchant account will be suspended if I don’t pay. I have paid.",
+                        "sentiment": "negative",
+                        "key_phrases": [
+                            "merchant account suspended",
+                            "I have paid"
+                        ]
+                    }
+                ]
+            },
+            "key_points": {
+                "customer_concerns": [
+                    {
+                        "type": "transaction_dispute",
+                        "description": "Chargeback notification despite payment",
+                        "transaction_reference": {
+                            "amount": 18500,
+                            "date": "2023-07-03",
+                            "account_last4": null
+                        }
+                    }
+                ]
+            },
+            "action_items": [
+                {
+                    "type": "internal_escalation",
+                    "action_type": "issue_resolution",
+                    "assigned_to": "Agent",
+                    "due_date": "2023-07-06T00:00:00Z",
+                    "status": "open"
+                }
+            ],
+            "analytics": {
+                "overall_sentiment": "negative"
+            }
+        },
+    {
+            "conversation_metadata": {
+                "call_type": "inbound",
+                "customer_name": "Arvind Sinha",
+                "account_type": "Checking accounts",
+                "agent_name": "Prakash",
+                "account_number": null
+            },
+            "conversation_details": {
+                "summary": {
+                    "overview": "Customer Arvind Sinha called regarding a chargeback issue. The previous ticket was not found, and the customer expressed frustration. A new ticket was raised and escalated.",
+                    "primary_issue": "chargeback",
+                    "resolution_status": "pending",
+                    "call_outcome": "escalated"
+                },
+                "transcript_segments": [
+                    {
+                        "speaker": "customer",
+                        "text": "Hello, this is Arvind Sinha. I’m following up on a chargeback issue from three days ago. Ticket number is SR45298. I paid the chargeback and submitted proof.",
+                        "sentiment": "neutral",
+                        "key_phrases": [
+                            "chargeback issue",
+                            "ticket number",
+                            "submitted proof"
+                        ]
+                    },
+                    {
+                        "speaker": "agent",
+                        "text": "Let me check that… I’m sorry sir, I don’t see that ticket in our current queue. Could you explain the issue again?",
+                        "sentiment": "neutral",
+                        "key_phrases": [
+                            "ticket not found"
+                        ]
+                    },
+                    {
+                        "speaker": "customer",
+                        "text": "What do you mean? I explained all this to a guy named Prakash. I even gave the UTR. Are your support systems not connected?",
+                        "sentiment": "negative",
+                        "key_phrases": [
+                            "explained to Prakash",
+                            "support systems not connected"
+                        ]
+                    },
+                    {
+                        "speaker": "agent",
+                        "text": "I apologize. Sometimes older tickets are routed to another internal desk, and we may not have visibility. Can you share the UTR again?",
+                        "sentiment": "neutral",
+                        "key_phrases": [
+                            "older tickets routed",
+                            "share UTR again"
+                        ]
+                    },
+                    {
+                        "speaker": "customer",
+                        "text": "AXIS98382122! This is the second time I’ve repeated this. I don’t want another apology—I want this fixed.",
+                        "sentiment": "negative",
+                        "key_phrases": [
+                            "repeated UTR",
+                            "want this fixed"
+                        ]
+                    },
+                    {
+                        "speaker": "agent",
+                        "text": "Completely understand, sir. I’ll raise a new ticket (SR46003) and escalate it again to Risk & Reconciliation.",
+                        "sentiment": "neutral",
+                        "key_phrases": [
+                            "raise new ticket",
+                            "escalate to Risk & Reconciliation"
+                        ]
+                    }
+                ]
+            },
+            "key_points": {
+                "customer_concerns": [
+                    {
+                        "type": "transaction_dispute",
+                        "description": "chargeback issue",
+                        "transaction_reference": {
+                            "amount": null,
+                            "date": null,
+                            "account_last4": null
+                        }
+                    }
+                ]
+            },
+            "action_items": [
+                {
+                    "type": "internal_escalation",
+                    "action_type": "issue_resolution",
+                    "assigned_to": "Risk & Reconciliation",
+                    "due_date": "2023-10-05T00:00:00Z",
+                    "status": "open"
+                }
+            ],
+            "analytics": {
+                "overall_sentiment": "negative"
+            }
+        },
+    {
+            "conversation_metadata": {
+                "call_type": "inbound",
+                "customer_name": "Sinha",
+                "account_type": "Checking accounts",
+                "agent_name": "Unknown",
+                "account_number": null
+            },
+            "conversation_details": {
+                "summary": {
+                    "overview": "Customer Sinha reported an issue with payment misfiling leading to account lock warning.",
+                    "primary_issue": "payment misfiling",
+                    "resolution_status": "pending",
+                    "call_outcome": "callback_scheduled"
+                },
+                "transcript_segments": [
+                    {
+                        "speaker": "customer",
+                        "text": "I’ve had enough of this. I’ve submitted payment proof twice. Today I got another warning from the Payment Bank that my account will be locked. This is ridiculous.",
+                        "sentiment": "negative",
+                        "key_phrases": [
+                            "payment proof",
+                            "account lock warning"
+                        ]
+                    },
+                    {
+                        "speaker": "agent",
+                        "text": "I’m really sorry, Mr. Sinha. Let me check... Okay, I see both SR45298 and SR46003 were opened. According to the backend note, your payment was received but tagged under a different chargeback ID. That’s why it’s still marked “unpaid”.",
+                        "sentiment": "neutral",
+                        "key_phrases": [
+                            "chargeback ID",
+                            "unpaid"
+                        ]
+                    },
+                    {
+                        "speaker": "customer",
+                        "text": "So your backend misfiled the reference, and I’m the one getting flagged?",
+                        "sentiment": "negative",
+                        "key_phrases": [
+                            "backend misfiled",
+                            "getting flagged"
+                        ]
+                    },
+                    {
+                        "speaker": "agent",
+                        "text": "Unfortunately, yes sir. I’ve just now requested the Settlement Operations team to re-map your payment to the correct dispute ID. I’ll follow up personally and confirm once it’s done.",
+                        "sentiment": "neutral",
+                        "key_phrases": [
+                            "re-map payment",
+                            "dispute ID"
+                        ]
+                    },
+                    {
+                        "speaker": "customer",
+                        "text": "You need to make sure this gets fixed today. I won’t let my account get blocked because of your internal error.",
+                        "sentiment": "negative",
+                        "key_phrases": [
+                            "internal error",
+                            "account blocked"
+                        ]
+                    }
+                ]
+            },
+            "key_points": {
+                "customer_concerns": [
+                    {
+                        "type": "transaction_dispute",
+                        "description": "payment misfiling",
+                        "transaction_reference": {
+                            "amount": null,
+                            "date": null,
+                            "account_last4": null
+                        }
+                    }
+                ]
+            },
+            "action_items": [
+                {
+                    "type": "internal_escalation",
+                    "action_type": "issue_resolution",
+                    "assigned_to": "Settlement Operations",
+                    "due_date": "2023-10-05T00:00:00Z",
+                    "status": "in_progress"
+                }
+            ],
+            "analytics": {
+                "overall_sentiment": "negative"
+            }
+        },
+    {
+            "conversation_metadata": {
+                "call_type": "inbound",
+                "customer_name": "Merchant",
+                "account_type": "Checking accounts",
+                "agent_name": "Agent",
+                "account_number": null
+            },
+            "conversation_details": {
+                "summary": {
+                    "overview": "Merchant received a call about account suspension due to a pending alert from an open chargeback flag. Merchant expressed frustration over repeated explanations to multiple agents. Agent temporarily froze the suspension and escalated the issue to the internal risk head for manual override.",
+                    "primary_issue": "account suspension",
+                    "resolution_status": "pending",
+                    "call_outcome": "escalated"
+                },
+                "transcript_segments": [
+                    {
+                        "speaker": "customer",
+                        "text": "I just got a call saying my merchant account will be suspended in 24 hours. What the hell is going on?",
+                        "sentiment": "negative",
+                        "key_phrases": [
+                            "account suspension"
+                        ]
+                    },
+                    {
+                        "speaker": "agent",
+                        "text": "Sir, I’m really sorry. I see a pending alert that was automatically triggered due to the open chargeback flag. It was not manually reviewed after your previous escalation.",
+                        "sentiment": "neutral",
+                        "key_phrases": [
+                            "pending alert",
+                            "chargeback flag"
+                        ]
+                    },
+                    {
+                        "speaker": "customer",
+                        "text": "I’ve spoken to THREE agents already. Why does no one have any context? I’ve given UTR, I’ve raised tickets, I’ve received empty promises.",
+                        "sentiment": "negative",
+                        "key_phrases": [
+                            "repeated explanations",
+                            "empty promises"
+                        ]
+                    },
+                    {
+                        "speaker": "agent",
+                        "text": "Completely valid complaint, sir. I’m freezing the suspension temporarily and escalating this to our internal risk head for manual override. You won’t face further action while this is pending.",
+                        "sentiment": "neutral",
+                        "key_phrases": [
+                            "freezing suspension",
+                            "internal escalation"
+                        ]
+                    },
+                    {
+                        "speaker": "customer",
+                        "text": "This is the fourth time I’ve explained the same thing. Do you guys not use a CRM? How is every new agent clueless?",
+                        "sentiment": "negative",
+                        "key_phrases": [
+                            "repeated explanations",
+                            "CRM issue"
+                        ]
+                    },
+                    {
+                        "speaker": "agent",
+                        "text": "I understand your frustration. I’ll submit a complaint regarding the repeated re-briefing as well. Please expect a senior-level callback.",
+                        "sentiment": "neutral",
+                        "key_phrases": [
+                            "complaint submission",
+                            "senior-level callback"
+                        ]
+                    }
+                ]
+            },
+            "key_points": {
+                "customer_concerns": [
+                    {
+                        "type": "account_issue",
+                        "description": "account suspension due to chargeback flag"
+                    }
+                ]
+            },
+            "action_items": [
+                {
+                    "type": "internal_escalation",
+                    "action_type": "issue_resolution",
+                    "assigned_to": "internal risk head",
+                    "due_date": "2023-10-06T00:00:00Z",
+                    "status": "in_progress"
+                }
+            ],
+            "analytics": {
+                "overall_sentiment": "negative"
+            }
+        },
+    {
+            "conversation_metadata": {
+                "call_type": "inbound",
+                "customer_name": "Merchant",
+                "account_type": "Checking accounts",
+                "agent_name": "Agent"
+            },
+            "conversation_details": {
+                "summary": {
+                    "overview": "A customer payment of ₹72,000 made on July 9 via UPI isn’t reflecting in the merchant's settlement report. The agent identified a potential reconciliation issue and raised a critical ticket for resolution.",
+                    "primary_issue": "payment discrepancy",
+                    "resolution_status": "pending",
+                    "call_outcome": "callback_scheduled"
+                },
+                "transcript_segments": [
+                    {
+                        "speaker": "customer",
+                        "text": "Now there's a NEW problem. A customer payment of ₹72,000 made on July 9 via UPI isn’t reflecting in my settlement report.",
+                        "sentiment": "negative",
+                        "key_phrases": [
+                            "payment discrepancy",
+                            "settlement report"
+                        ]
+                    },
+                    {
+                        "speaker": "agent",
+                        "text": "That’s concerning. Let me check your settlement records… I don’t see that order in today’s payout batch. Could you share the order ID?",
+                        "sentiment": "neutral",
+                        "key_phrases": [
+                            "settlement records",
+                            "payout batch"
+                        ]
+                    },
+                    {
+                        "speaker": "customer",
+                        "text": "Order ID is MTR-99012. My customer’s account was debited at 10:17 AM. Where is the money?",
+                        "sentiment": "negative",
+                        "key_phrases": [
+                            "Order ID MTR-99012",
+                            "customer’s account debited"
+                        ]
+                    },
+                    {
+                        "speaker": "agent",
+                        "text": "It could be a reconciliation issue, especially if the UPI ID wasn’t mapped correctly. I’ll raise a new ticket for this.",
+                        "sentiment": "neutral",
+                        "key_phrases": [
+                            "reconciliation issue",
+                            "UPI ID"
+                        ]
+                    },
+                    {
+                        "speaker": "customer",
+                        "text": "So now in addition to the chargeback fiasco, you’ve lost a customer’s ₹72,000 payment? I can’t afford this kind of incompetence.",
+                        "sentiment": "negative",
+                        "key_phrases": [
+                            "chargeback fiasco",
+                            "lost payment"
+                        ]
+                    },
+                    {
+                        "speaker": "agent",
+                        "text": "Completely understandable, sir. I’ve raised ticket #SR47300 for this payout issue and marked it as “Critical”. We’ll prioritize resolution.",
+                        "sentiment": "neutral",
+                        "key_phrases": [
+                            "ticket #SR47300",
+                            "payout issue"
+                        ]
+                    }
+                ]
+            },
+            "key_points": {
+                "customer_concerns": [
+                    {
+                        "type": "transaction_dispute",
+                        "description": "A customer payment of ₹72,000 made on July 9 via UPI isn’t reflecting in the settlement report.",
+                        "transaction_reference": {
+                            "amount": 72000,
+                            "date": "2023-07-09"
+                        }
+                    }
+                ]
+            },
+            "action_items": [
+                {
+                    "type": "internal_escalation",
+                    "action_type": "issue_resolution",
+                    "assigned_to": "Agent",
+                    "due_date": "2023-10-15T00:00:00Z",
+                    "status": "open"
+                }
+            ],
+            "analytics": {
+                "overall_sentiment": "negative"
+            }
+        }
+]
