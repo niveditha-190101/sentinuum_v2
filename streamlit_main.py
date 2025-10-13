@@ -27,6 +27,7 @@ from llama_index.core.memory import ChatMemoryBuffer
 from llama_index.embeddings.openai import OpenAIEmbedding
 from llama_index.core import Settings
 from utils import *
+# from timeline_function import create_matplotlib_vertical_timeline
 
 # Configure logging
 logging.basicConfig(
@@ -37,7 +38,6 @@ logging.basicConfig(
 # Streamlit page config
 st.set_page_config(
     page_title="Customer Service Analysis Agent",
-    page_icon="🤖",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -207,7 +207,9 @@ def create_tools(llm, collated_engine, transaction_engine, agent_context):
         issue = agent_context.get("issue")
         query = f"Customer: {name}. Issue: {issue}. Provide detailed conversation context."
         response = collated_engine.query(query)
+        print(response)
         context_text = "\n\n".join([node.node.get_content() for node in response.source_nodes])
+        print(context_text)
         agent_context.update({"conversation_context": context_text})
         return "Conversation context retrieved and stored."
 
@@ -309,7 +311,11 @@ def create_tools(llm, collated_engine, transaction_engine, agent_context):
 
         PATTERNS: Detail the recurring patterns discovered across both datasets. Include specific triggers, common failure points, and any unusual transaction behaviors (continuous withdrawals/deposits, liquidation patterns, etc.) that correlate with customer interactions. Highlight significant transaction anomalies and their connection to customer issues. Explain all these in 5 sentences short and concise.
 
-        TIMELINE: Present a chronological organization of all relevant events from both datasets. Include specific dates from both contexts, showing how they correlate. Highlight important milestones, decision points, initial contacts, escalations, follow-up actions, and resolution attempts. Show clear connections between dates in the knowledge base and transaction activities. 6 sentences from this timeline having the important information. Stick to this format example September 10th, 2023.
+        TIMELINE: Present a chronological organization of all relevant events from both datasets. Include specific dates from both contexts, showing how they correlate. Highlight important milestones, decision points, initial contacts, escalations, follow-up actions, and resolution attempts. Show clear connections between dates in the knowledge base and transaction activities. 6 sentences from this timeline having the important information. 
+        Stick to this format example: 
+            - October 1st, 2023: Daniel Patel initiated a wire transfer
+            - October 3rd, 2023: Daniel Patel contacted customer support regarding the delay
+            ...
 
         RATIONALE: Explain your reasoning process and why you believe these connections exist between the knowledge base context and transaction data. Include your analysis of how customer behavior correlates with transaction activities and what process failures might be occurring. Provide evidence-based justification for your conclusions and show me the numbers from the transaction data that is related to the analysis. Also provide few actionable recommendations.
         """
@@ -443,8 +449,12 @@ def create_tools(llm, collated_engine, transaction_engine, agent_context):
         ...
         """
         
-        response = llm.complete(prompt)
-        return response.text
+        recommendation_text = llm.complete(prompt)
+        response = recommendation_text.text
+        # return response.text
+
+        agent_context.update({"recommendation": response})
+        return response
 
     # Create tool list
     tools = [
@@ -543,7 +553,7 @@ def apply_custom_css():
 # Streamlit UI
 def main():
     apply_custom_css()
-    st.title("🤖 Customer Service Analysis Agent")
+    st.title("Customer Service Analysis Agent")
     st.markdown("---")
     
     # Main content area
@@ -573,24 +583,11 @@ def main():
     else:
         st.warning("No transcripts found in the directory.")
 
-# with col2:
-#     st.header("Analysis Status")
-    
-#     # Show current context status
-#     if st.session_state.agent_context:
-#         context_data = st.session_state.agent_context.get_all()
-#         if context_data:
-#             st.subheader("Current Context:")
-#             for key, value in context_data.items():
-#                 if value is not None and str(value).strip():
-#                     display_value = str(value)[:100] + "..." if len(str(value)) > 100 else str(value)
-#                     st.text(f"{key}: {display_value}")
-
     # Analysis section
     st.markdown("---")
     st.header("Analysis")
     
-    if st.button("🚀 Start Analysis", type="primary"):
+    if st.button(">> Start Analysis", type="primary"):
         with st.spinner("Initializing analysis..."):
             # Initialize LLM and data
             llm = initialize_llm()
@@ -671,10 +668,11 @@ def main():
     # Results section
     if st.session_state.analysis_complete:
         st.markdown("---")
-        st.header("📊 Analysis Results")
+        st.header("Analysis Results")
         
         # Display results in tabs
-        tab1, tab2, tab3, tab4 = st.tabs(["Summary", "Root Cause Analysis", "Recommendations", "Raw Response"])
+        # tab1, tab2, tab3, tab4 = st.tabs(["Summary", "Root Cause Analysis", "Recommendations", "Raw Response"])
+        tab1, tab2, tab3 = st.tabs(["Summary", "Root Cause Analysis", "Recommendations"])
         
         # Need to include microsentiments and other initial version features as required
         with tab1:
@@ -695,10 +693,11 @@ def main():
                 
                 if 'summary' in context_data:
                     st.subheader("Summary")
-                    st.write(context_data['summary'])
+                    # st.write(context_data['summary'])
+                    st.write(context_data['summary'].replace('$', '\\$'))
 
         with tab2:
-            st.subheader("Root Cause Analysis")
+            # st.subheader("Root Cause Analysis")
             
             context_data = st.session_state.agent_context.get_all()
             if 'rootcause' in context_data and context_data['rootcause']:
@@ -707,28 +706,40 @@ def main():
                 
                 if parsed_rca:
                     if 'rootcause' in parsed_rca:
-                        st.write("**Root Cause:**")
-                        st.write(parsed_rca['rootcause'])
+                        st.write("*Root Cause:*")
+                        st.write(parsed_rca['rootcause'].replace('$', '\\$'))
                         st.markdown("---")
                     
                     if 'pattern' in parsed_rca:
-                        st.write("**Patterns:**")
-                        st.write(parsed_rca['pattern'])
+                        st.write("*Patterns:*")
+                        st.write(parsed_rca['pattern'].replace('$', '\\$'))
                         st.markdown("---")
                     
                     # Timeline of events is generated but not as a plot. Timeline plot function has to be integrated.
                     if 'timeline' in parsed_rca:
-                        st.write("**Timeline:**")
+                        st.write("*Timeline:*")
+                        # with open("C:/Users/niveditha.n.lv/Documents/summarizer/paysafe/root_cause_timeline.txt", "w", encoding="utf-8") as f:
+                        #     f.write(parsed_rca["timeline"])
                         st.write(parsed_rca['timeline'])
-                        st.markdown("---")
+                        st.download_button(
+                            label="📥 Download Timeline",
+                            data=parsed_rca["timeline"],          # the content to download
+                            file_name="root_cause_timeline.txt",  # file name for download
+                            mime="text/plain"                     # MIME type
+                        )
+                        
+# # Timeline not executing
+#                         events = [line.strip() for line in parsed_rca['timeline'].split('\n') if line.strip()]
+#                         fig, ax = create_matplotlib_vertical_timeline(events)
+#                         st.pyplot(fig)
                     
                     if 'rationale' in parsed_rca:
-                        st.write("**Rationale:**")
-                        st.write(parsed_rca['rationale'])
+                        st.write("*Rationale:*")
+                        st.write(parsed_rca['rationale'].replace('$', '\\$'))
                 else:
                     # Fallback: display raw RCA content
-                    st.write("**Root Cause Analysis:**")
-                    st.write(rca_content)
+                    st.write("*Root Cause Analysis:*")
+                    st.write(rca_content.replace('$', '\\$'))
             else:
                 st.info("Root cause analysis not available. Please ensure the analysis completed successfully.")
 
@@ -758,25 +769,25 @@ def main():
                 else:
                     st.info("Recommendations not yet available. Please ensure the complete analysis workflow is executed.")
 
-        with tab4:
-            st.subheader("Raw Agent Response")
+        # with tab4:
+        #     st.subheader("Raw Agent Response")
             
-            if 'results' in st.session_state and 'response' in st.session_state.results:
-                st.code(st.session_state.results['response'], language="text")
-            else:
-                st.info("No raw response available.")
+        #     if 'results' in st.session_state and 'response' in st.session_state.results:
+        #         st.code(st.session_state.results['response'], language="text")
+        #     else:
+        #         st.info("No raw response available.")
             
-            # Also show the full context for debugging
-            st.subheader("Full Context Data")
-            context_data = st.session_state.agent_context.get_all()
-            if context_data:
-                st.json(context_data)
+        #     # Also show the full context for debugging
+        #     st.subheader("Full Context Data")
+        #     context_data = st.session_state.agent_context.get_all()
+        #     if context_data:
+        #         st.json(context_data)
 
         # Export functionality
         st.markdown("---")
         st.subheader("Export Results")
         
-        if st.button("📥 Export Analysis Results"):
+        if st.button("Export Analysis Results"):
             export_data = {
                 "timestamp": datetime.now().isoformat(),
                 "extracted_data": st.session_state.agent_context.get_all(),
